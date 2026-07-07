@@ -239,7 +239,7 @@ Edit `checkout.php` and `cart.php` to change shipping calculation.
 
 ## Support
 
-For issues or questions, contact: hello@tribalcrafts.in
+For issues or questions, contact: https://linkedin.com/in/ankitrathva
 
 ## License
 
