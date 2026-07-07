@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Tribal Crafts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">&#9752;</span>
+      Tribal Crafts
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="artisans.html">Artisans</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active-link">Contact</a>
+      <a href="artisans.html" class="cta-btn">Connect with Artisans</a>
+    </div>
+    <button class="mobile-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+    </div>
+    <h1>Get in Touch</h1>
+    <p>Have a question, want to connect with an artisan, or register as a seller? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section-pad">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info animate-in">
+        <h3>Let's Connect</h3>
+        <p>Whether you're a buyer looking for a specific craft, an artisan wanting to join our platform, or someone with a question — reach out and we'll get back to you.</p>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-method-icon">&#128231;</div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4129242d2d2e0135332823202d2233202735326f282f">[email&#160;protected]</a></p>
+              <p>We reply within 24 hours</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon">&#128222;</div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+91 123 456 7890</p>
+              <p>Mon-Sat, 9am - 6pm IST</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon">&#128205;</div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>Tribal Crafts Office</p>
+              <p>Main Road, Ranchi, Jharkhand 834001</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon">&#128172;</div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>+91 123 456 7890</p>
+              <p>Quick responses for urgent queries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form animate-in" id="contactFormWrapper">
+        <h3>Send a Message</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+          </div>
+          <div class="form-group">
+            <label for="purpose">Purpose</label>
+            <select id="purpose" name="purpose" required>
+              <option value="">Select a reason</option>
+              <option value="buyer">I want to buy products</option>
+              <option value="artisan">I want to register as an artisan</option>
+              <option value="question">I have a general question</option>
+              <option value="partnership">Partnership / Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message &#8594;</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="section-pad" style="background: var(--cream);">
+  <div class="container">
+    <div class="section-header animate-in">
+      <div class="overline">Common Questions</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div style="max-width: 700px; margin: 0 auto;">
+      <div class="animate-in" style="background: var(--warm-white); padding: 24px 28px; border-radius: var(--radius); margin-bottom: 16px; border-left: 3px solid var(--terracotta);">
+        <h4 style="font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--bark); margin-bottom: 8px;">How do I contact an artisan directly?</h4>
+        <p style="font-size: 0.92rem; color: var(--text-light); line-height: 1.7;">Visit our <a href="artisans.html" style="color: var(--terracotta); font-weight: 500;">Artisans page</a>, find the artisan you'd like to connect with, and use the Call or Message buttons on their profile.</p>
+      </div>
+      <div class="animate-in" style="background: var(--warm-white); padding: 24px 28px; border-radius: var(--radius); margin-bottom: 16px; border-left: 3px solid var(--terracotta);">
+        <h4 style="font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--bark); margin-bottom: 8px;">How can I register as an artisan?</h4>
+        <p style="font-size: 0.92rem; color: var(--text-light); line-height: 1.7;">Fill out the contact form above and select "I want to register as an artisan." Our team will reach out to help you set up your profile and list your products.</p>
+      </div>
+      <div class="animate-in" style="background: var(--warm-white); padding: 24px 28px; border-radius: var(--radius); margin-bottom: 16px; border-left: 3px solid var(--terracotta);">
+        <h4 style="font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--bark); margin-bottom: 8px;">Is there any fee to join the platform?</h4>
+        <p style="font-size: 0.92rem; color: var(--text-light); line-height: 1.7;">No. Tribal Crafts is free for both artisans and buyers. We believe in removing barriers, not adding them. Our goal is to help artisans earn fair income.</p>
+      </div>
+      <div class="animate-in" style="background: var(--warm-white); padding: 24px 28px; border-radius: var(--radius); margin-bottom: 16px; border-left: 3px solid var(--terracotta);">
+        <h4 style="font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--bark); margin-bottom: 8px;">Do you handle shipping and delivery?</h4>
+        <p style="font-size: 0.92rem; color: var(--text-light); line-height: 1.7;">Shipping is arranged directly between the buyer and artisan. We can help coordinate logistics for larger orders, but most transactions are handled directly between the two parties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">&#9752; Tribal Crafts</div>
+        <p>Connecting tribal artisans with the world. Every purchase supports a family, preserves a tradition, and celebrates the beauty of handmade.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="artisans.html">Artisans</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>For Artisans</h4>
+        <a href="contact.html">Register as Artisan</a>
+        <a href="#">Seller Guidelines</a>
+        <a href="#">Training Programs</a>
+        <a href="#">Support Center</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="/cdn-cgi/l/email-protection#224a474e4e4d6256504b40434e4150434456510c4b4c"><span class="__cf_email__" data-cfemail="adc5c8c1c1c2edd9dfc4cfccc1cedfcccbd9de83c4c3">[email&#160;protected]</span></a>
+        <a href="tel:+911234567890">+91 123 456 7890</a>
+        <a href="#">Ranchi, Jharkhand, India</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Tribal Crafts. Made with purpose.</span>
+      <div class="footer-social">
+        <a href="#">&#127760;</a>
+        <a href="#">&#128247;</a>
+        <a href="#">&#127908;</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+</body>
+</html>

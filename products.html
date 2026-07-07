@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Tribal Crafts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">&#9752;</span>
+      Tribal Crafts
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="artisans.html">Artisans</a>
+      <a href="products.html" class="active-link">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="artisans.html" class="cta-btn">Connect with Artisans</a>
+    </div>
+    <button class="mobile-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <span>/</span> <span>Products</span>
+    </div>
+    <h1>Bamboo Collection</h1>
+    <p>Authentic bamboo products crafted by hand, each piece telling a story of tradition and heritage</p>
+  </div>
+</section>
+
+<!-- ALL PRODUCTS -->
+<section id="products" class="section-pad">
+  <div class="container">
+    <div class="product-filters animate-in">
+      <button class="filter-btn active" onclick="filterProducts('all', this)">All Products</button>
+      <button class="filter-btn" onclick="filterProducts('furniture', this)">Furniture</button>
+      <button class="filter-btn" onclick="filterProducts('baskets', this)">Baskets</button>
+      <button class="filter-btn" onclick="filterProducts('decor', this)">Home Decor</button>
+      <button class="filter-btn" onclick="filterProducts('tools', this)">Tools & Utility</button>
+      <button class="filter-btn" onclick="filterProducts('jewelry', this)">Jewelry</button>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card animate-in" data-category="furniture">
+        <div class="product-img" style="background: linear-gradient(135deg, #D4A574, #BFA06A);">
+          &#129680;
+          <span class="product-tag">Popular</span>
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Rocking Chair</h3>
+          <div class="product-artisan-name">by Ramu Munda</div>
+          <p class="product-desc">Hand-curved rocking chair with woven seat. Perfect for verandas and living rooms.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;3,500</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="baskets">
+        <div class="product-img" style="background: linear-gradient(135deg, #8B9E6B, #7A8E5B);">
+          &#129533;
+          <span class="product-tag">New</span>
+        </div>
+        <div class="product-details">
+          <h3>Woven Storage Basket Set</h3>
+          <div class="product-artisan-name">by Sita Oraon</div>
+          <p class="product-desc">Set of 3 nesting baskets with traditional Oraon geometric patterns. Great for home organization.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;1,200</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="decor">
+        <div class="product-img" style="background: linear-gradient(135deg, #C4956A, #A67B52);">
+          &#128161;
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Pendant Lamp</h3>
+          <div class="product-artisan-name">by Birsa Ho</div>
+          <p class="product-desc">Intricately woven pendant lamp that casts beautiful shadow patterns. Fits standard bulb holders.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;1,800</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="furniture">
+        <div class="product-img" style="background: linear-gradient(135deg, #9E8B6B, #8A7B5B);">
+          &#128186;
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Stool (Pair)</h3>
+          <div class="product-artisan-name">by Ramu Munda</div>
+          <p class="product-desc">Lightweight yet sturdy pair of bamboo stools. Natural finish with polished surface.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;2,200</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="tools">
+        <div class="product-img" style="background: linear-gradient(135deg, #A69070, #8E7A5E);">
+          &#127807;
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Garden Tools Set</h3>
+          <div class="product-artisan-name">by Birsa Ho</div>
+          <p class="product-desc">Set of 5 garden tools with bamboo handles. Rake, trowel, weeder, planter, and cultivator.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;950</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="baskets">
+        <div class="product-img" style="background: linear-gradient(135deg, #B8A080, #9E8A6A);">
+          &#127809;
+          <span class="product-tag">Handwoven</span>
+        </div>
+        <div class="product-details">
+          <h3>Market Tote Basket</h3>
+          <div class="product-artisan-name">by Sita Oraon</div>
+          <p class="product-desc">Large woven tote with handles. Eco-friendly alternative for shopping. Holds up to 15kg.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;800</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="decor">
+        <div class="product-img" style="background: linear-gradient(135deg, #C4A882, #AA9268);">
+          &#127922;
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Wall Art Panel</h3>
+          <div class="product-artisan-name">by Birsa Ho</div>
+          <p class="product-desc">Decorative wall panel with tribal motif carving. A statement piece for any room.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;2,500</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="tools">
+        <div class="product-img" style="background: linear-gradient(135deg, #8E7A5E, #7A6848);">
+          &#127860;
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Kitchen Organizer</h3>
+          <div class="product-artisan-name">by Sita Oraon</div>
+          <p class="product-desc">Multi-tier kitchen organizer for utensils and spices. Compact and elegant design.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;1,400</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="jewelry">
+        <div class="product-img" style="background: linear-gradient(135deg, #D4B896, #C4A876);">
+          &#128142;
+          <span class="product-tag">Handmade</span>
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Bead Earrings</h3>
+          <div class="product-artisan-name">by Lakshmi Bhil</div>
+          <p class="product-desc">Lightweight bamboo earrings with traditional Bhil beadwork. Available in natural and dyed colors.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;350</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="decor">
+        <div class="product-img" style="background: linear-gradient(135deg, #A69070, #8E7A5E);">
+          &#127922;
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Photo Frame</h3>
+          <div class="product-artisan-name">by Mali Gond</div>
+          <p class="product-desc">Handcrafted bamboo photo frame with Gond art-inspired border design. Fits 6x4 inch photos.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;600</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="furniture">
+        <div class="product-img" style="background: linear-gradient(135deg, #B8A080, #9E8A6A);">
+          &#128186;
+          <span class="product-tag">Bestseller</span>
+        </div>
+        <div class="product-details">
+          <h3>Bamboo Coffee Table</h3>
+          <div class="product-artisan-name">by Ramu Munda</div>
+          <p class="product-desc">Elegant bamboo coffee table with glass top. Traditional joinery with modern aesthetics.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;4,800</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in" data-category="jewelry">
+        <div class="product-img" style="background: linear-gradient(135deg, #C4A882, #AA9268);">
+          &#128141;
+        </div>
+        <div class="product-details">
+          <h3>Bamboo & Bead Necklace</h3>
+          <div class="product-artisan-name">by Lakshmi Bhil</div>
+          <p class="product-desc">Statement necklace with bamboo segments and colorful tribal beads. Adjustable length.</p>
+          <div class="product-footer">
+            <span class="product-price">&#8377;550</span>
+            <a href="artisans.html" class="product-contact-link">Contact Artisan &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">&#9752; Tribal Crafts</div>
+        <p>Connecting tribal artisans with the world. Every purchase supports a family, preserves a tradition, and celebrates the beauty of handmade.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="artisans.html">Artisans</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>For Artisans</h4>
+        <a href="contact.html">Register as Artisan</a>
+        <a href="#">Seller Guidelines</a>
+        <a href="#">Training Programs</a>
+        <a href="#">Support Center</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="/cdn-cgi/l/email-protection#d1b9b4bdbdbe91a5a3b8b3b0bdb2a3b0b7a5a2ffb8bf"><span class="__cf_email__" data-cfemail="620a070e0e0d2216100b00030e0110030416114c0b0c">[email&#160;protected]</span></a>
+        <a href="tel:+911234567890">+91 123 456 7890</a>
+        <a href="#">Ranchi, Jharkhand, India</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Tribal Crafts. Made with purpose.</span>
+      <div class="footer-social">
+        <a href="#">&#127760;</a>
+        <a href="#">&#128247;</a>
+        <a href="#">&#127908;</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+</body>
+</html>
